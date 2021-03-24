@@ -4,7 +4,7 @@ module.exports = [
     cost: -60194,
     contract: 'Put',
     strike: 6,
-    expire: '2020-12-19',
+    expire: '2021-12-19',
     quantity: 11,
     ledgerId: 29
   },
@@ -31,7 +31,7 @@ module.exports = [
     cost: 63394,
     contract: 'Spread',
     strike: 91,
-    expire: '2020-07-03',
+    expire: '2021-07-03',
     quantity: 22,
     ledgerId: 54
   },
@@ -40,7 +40,7 @@ module.exports = [
     cost: 55997,
     contract: 'Stock',
     strike: 51,
-    expire: '2020-07-09',
+    expire: '2021-07-09',
     quantity: 4,
     ledgerId: 73
   },
@@ -49,7 +49,7 @@ module.exports = [
     cost: 34811,
     contract: 'Call',
     strike: 45,
-    expire: '2020-12-17',
+    expire: '2021-12-17',
     quantity: 25,
     ledgerId: 76
   },
@@ -67,7 +67,7 @@ module.exports = [
     cost: 83374,
     contract: 'Call',
     strike: 47,
-    expire: '2020-08-18',
+    expire: '2021-08-18',
     quantity: 17,
     ledgerId: 22
   },
@@ -85,7 +85,7 @@ module.exports = [
     cost: 231579,
     contract: 'Call',
     strike: 31,
-    expire: '2020-12-13',
+    expire: '2021-12-13',
     quantity: 24,
     ledgerId: 30
   },
@@ -94,7 +94,7 @@ module.exports = [
     cost: -58709,
     contract: 'Put',
     strike: 30,
-    expire: '2020-09-02',
+    expire: '2021-09-02',
     quantity: 8,
     ledgerId: 69
   },
@@ -103,7 +103,7 @@ module.exports = [
     cost: 203176,
     contract: 'Stock',
     strike: 85,
-    expire: '2020-12-07',
+    expire: '2021-12-07',
     quantity: 16,
     ledgerId: 36
   },
@@ -112,7 +112,7 @@ module.exports = [
     cost: -89980,
     contract: 'Spread',
     strike: 10,
-    expire: '2020-11-29',
+    expire: '2021-11-29',
     quantity: 9,
     ledgerId: 18
   },
@@ -130,7 +130,7 @@ module.exports = [
     cost: 185188,
     contract: 'Stock',
     strike: 10,
-    expire: '2020-12-25',
+    expire: '2021-12-25',
     quantity: 16,
     ledgerId: 48
   },
@@ -148,7 +148,7 @@ module.exports = [
     cost: 90698,
     contract: 'Stock',
     strike: 1,
-    expire: '2020-08-04',
+    expire: '2021-08-04',
     quantity: 10,
     ledgerId: 5
   },
@@ -157,7 +157,7 @@ module.exports = [
     cost: 187160,
     contract: 'Put',
     strike: 62,
-    expire: '2020-07-10',
+    expire: '2021-07-10',
     quantity: 24,
     ledgerId: 95
   },
@@ -166,7 +166,7 @@ module.exports = [
     cost: -37696,
     contract: 'Put',
     strike: 53,
-    expire: '2020-04-05',
+    expire: '2021-04-05',
     quantity: 14,
     ledgerId: 6
   },
@@ -175,7 +175,7 @@ module.exports = [
     cost: 203377,
     contract: 'Call',
     strike: 32,
-    expire: '2020-07-18',
+    expire: '2021-07-18',
     quantity: 10,
     ledgerId: 15
   },
@@ -193,7 +193,7 @@ module.exports = [
     cost: -75032,
     contract: 'Stock',
     strike: 33,
-    expire: '2020-12-24',
+    expire: '2021-12-24',
     quantity: 20,
     ledgerId: 26
   },
@@ -202,7 +202,7 @@ module.exports = [
     cost: 179021,
     contract: 'Stock',
     strike: 61,
-    expire: '2020-08-12',
+    expire: '2021-08-12',
     quantity: 22,
     ledgerId: 99
   },
@@ -211,7 +211,7 @@ module.exports = [
     cost: -7133,
     contract: 'Stock',
     strike: 92,
-    expire: '2020-08-04',
+    expire: '2021-08-04',
     quantity: 13,
     ledgerId: 29
   },
@@ -220,7 +220,7 @@ module.exports = [
     cost: -67428,
     contract: 'Spread',
     strike: 18,
-    expire: '2020-10-02',
+    expire: '2021-10-02',
     quantity: 24,
     ledgerId: 35
   },
@@ -229,7 +229,7 @@ module.exports = [
     cost: 203750,
     contract: 'Spread',
     strike: 55,
-    expire: '2020-06-23',
+    expire: '2021-06-23',
     quantity: 14,
     ledgerId: 84
   },
@@ -238,7 +238,7 @@ module.exports = [
     cost: -22859,
     contract: 'Put',
     strike: 86,
-    expire: '2020-10-23',
+    expire: '2021-10-23',
     quantity: 22,
     ledgerId: 35
   },
@@ -247,7 +247,7 @@ module.exports = [
     cost: 98133,
     contract: 'Put',
     strike: 65,
-    expire: '2020-08-28',
+    expire: '2021-08-28',
     quantity: 15,
     ledgerId: 68
   },
@@ -256,7 +256,7 @@ module.exports = [
     cost: 11067,
     contract: 'Call',
     strike: 96,
-    expire: '2020-08-28',
+    expire: '2021-08-28',
     quantity: 7,
     ledgerId: 73
   },
@@ -274,7 +274,7 @@ module.exports = [
     cost: 146176,
     contract: 'Put',
     strike: 8,
-    expire: '2020-12-26',
+    expire: '2021-12-26',
     quantity: 16,
     ledgerId: 62
   },
@@ -283,7 +283,7 @@ module.exports = [
     cost: 84083,
     contract: 'Stock',
     strike: 83,
-    expire: '2020-09-11',
+    expire: '2021-09-11',
     quantity: 7,
     ledgerId: 15
   },
@@ -301,7 +301,7 @@ module.exports = [
     cost: 248803,
     contract: 'Call',
     strike: 10,
-    expire: '2020-06-02',
+    expire: '2021-06-02',
     quantity: 4,
     ledgerId: 38
   },
@@ -310,7 +310,7 @@ module.exports = [
     cost: -51865,
     contract: 'Put',
     strike: 78,
-    expire: '2020-06-11',
+    expire: '2021-06-11',
     quantity: 24,
     ledgerId: 68
   },
@@ -319,7 +319,7 @@ module.exports = [
     cost: 67004,
     contract: 'Call',
     strike: 75,
-    expire: '2020-07-12',
+    expire: '2021-07-12',
     quantity: 19,
     ledgerId: 96
   },
@@ -328,7 +328,7 @@ module.exports = [
     cost: 100038,
     contract: 'Stock',
     strike: 73,
-    expire: '2020-11-09',
+    expire: '2021-11-09',
     quantity: 25,
     ledgerId: 58
   },
@@ -337,7 +337,7 @@ module.exports = [
     cost: 56693,
     contract: 'Call',
     strike: 33,
-    expire: '2020-07-24',
+    expire: '2021-07-24',
     quantity: 6,
     ledgerId: 26
   },
@@ -355,7 +355,7 @@ module.exports = [
     cost: 61102,
     contract: 'Stock',
     strike: 10,
-    expire: '2020-04-24',
+    expire: '2021-04-24',
     quantity: 15,
     ledgerId: 85
   },
@@ -364,7 +364,7 @@ module.exports = [
     cost: 151642,
     contract: 'Put',
     strike: 64,
-    expire: '2020-11-29',
+    expire: '2021-11-29',
     quantity: 17,
     ledgerId: 47
   },
@@ -382,7 +382,7 @@ module.exports = [
     cost: -58490,
     contract: 'Put',
     strike: 33,
-    expire: '2020-05-28',
+    expire: '2021-05-28',
     quantity: 10,
     ledgerId: 49
   },
@@ -391,7 +391,7 @@ module.exports = [
     cost: 28938,
     contract: 'Call',
     strike: 21,
-    expire: '2020-06-29',
+    expire: '2021-06-29',
     quantity: 8,
     ledgerId: 40
   },
@@ -409,7 +409,7 @@ module.exports = [
     cost: 121512,
     contract: 'Stock',
     strike: 9,
-    expire: '2020-05-08',
+    expire: '2021-05-08',
     quantity: 10,
     ledgerId: 75
   },
@@ -418,7 +418,7 @@ module.exports = [
     cost: -71464,
     contract: 'Spread',
     strike: 84,
-    expire: '2020-07-15',
+    expire: '2021-07-15',
     quantity: 23,
     ledgerId: 28
   },
@@ -427,7 +427,7 @@ module.exports = [
     cost: 1745,
     contract: 'Put',
     strike: 86,
-    expire: '2020-08-31',
+    expire: '2021-08-31',
     quantity: 19,
     ledgerId: 92
   },
@@ -436,7 +436,7 @@ module.exports = [
     cost: -25148,
     contract: 'Stock',
     strike: 88,
-    expire: '2020-06-22',
+    expire: '2021-06-22',
     quantity: 9,
     ledgerId: 98
   },
@@ -445,7 +445,7 @@ module.exports = [
     cost: 25005,
     contract: 'Stock',
     strike: 99,
-    expire: '2020-04-15',
+    expire: '2021-04-15',
     quantity: 23,
     ledgerId: 50
   },
@@ -454,7 +454,7 @@ module.exports = [
     cost: 124573,
     contract: 'Spread',
     strike: 3,
-    expire: '2020-10-22',
+    expire: '2021-10-22',
     quantity: 5,
     ledgerId: 1
   },
@@ -463,7 +463,7 @@ module.exports = [
     cost: 240516,
     contract: 'Call',
     strike: 82,
-    expire: '2020-11-19',
+    expire: '2021-11-19',
     quantity: 3,
     ledgerId: 17
   },
@@ -481,7 +481,7 @@ module.exports = [
     cost: -18379,
     contract: 'Stock',
     strike: 75,
-    expire: '2020-09-22',
+    expire: '2021-09-22',
     quantity: 15,
     ledgerId: 5
   },
@@ -490,7 +490,7 @@ module.exports = [
     cost: 225619,
     contract: 'Spread',
     strike: 35,
-    expire: '2020-08-11',
+    expire: '2021-08-11',
     quantity: 21,
     ledgerId: 71
   },
@@ -499,7 +499,7 @@ module.exports = [
     cost: -37951,
     contract: 'Spread',
     strike: 26,
-    expire: '2020-04-06',
+    expire: '2021-04-06',
     quantity: 1,
     ledgerId: 11
   },
@@ -517,7 +517,7 @@ module.exports = [
     cost: 195174,
     contract: 'Call',
     strike: 11,
-    expire: '2020-10-06',
+    expire: '2021-10-06',
     quantity: 7,
     ledgerId: 50
   },
@@ -526,7 +526,7 @@ module.exports = [
     cost: -21381,
     contract: 'Spread',
     strike: 98,
-    expire: '2020-04-26',
+    expire: '2021-04-26',
     quantity: 18,
     ledgerId: 43
   },
@@ -535,7 +535,7 @@ module.exports = [
     cost: -60529,
     contract: 'Put',
     strike: 81,
-    expire: '2020-10-31',
+    expire: '2021-10-31',
     quantity: 25,
     ledgerId: 33
   },
@@ -544,7 +544,7 @@ module.exports = [
     cost: 100251,
     contract: 'Call',
     strike: 42,
-    expire: '2020-10-13',
+    expire: '2021-10-13',
     quantity: 13,
     ledgerId: 81
   },
@@ -553,7 +553,7 @@ module.exports = [
     cost: 134402,
     contract: 'Stock',
     strike: 7,
-    expire: '2020-09-28',
+    expire: '2021-09-28',
     quantity: 2,
     ledgerId: 29
   },
@@ -562,7 +562,7 @@ module.exports = [
     cost: 233592,
     contract: 'Put',
     strike: 94,
-    expire: '2020-06-26',
+    expire: '2021-06-26',
     quantity: 18,
     ledgerId: 45
   },
@@ -571,7 +571,7 @@ module.exports = [
     cost: 6152,
     contract: 'Call',
     strike: 45,
-    expire: '2020-06-16',
+    expire: '2021-06-16',
     quantity: 6,
     ledgerId: 94
   },
@@ -580,7 +580,7 @@ module.exports = [
     cost: 83421,
     contract: 'Spread',
     strike: 24,
-    expire: '2020-11-28',
+    expire: '2021-11-28',
     quantity: 15,
     ledgerId: 40
   },
@@ -598,7 +598,7 @@ module.exports = [
     cost: 76978,
     contract: 'Put',
     strike: 47,
-    expire: '2020-11-27',
+    expire: '2021-11-27',
     quantity: 5,
     ledgerId: 52
   },
@@ -607,7 +607,7 @@ module.exports = [
     cost: 141873,
     contract: 'Call',
     strike: 67,
-    expire: '2020-04-23',
+    expire: '2021-04-23',
     quantity: 6,
     ledgerId: 16
   },
@@ -616,7 +616,7 @@ module.exports = [
     cost: 143755,
     contract: 'Stock',
     strike: 10,
-    expire: '2020-04-24',
+    expire: '2021-04-24',
     quantity: 25,
     ledgerId: 31
   },
@@ -643,7 +643,7 @@ module.exports = [
     cost: 217842,
     contract: 'Put',
     strike: 81,
-    expire: '2020-11-27',
+    expire: '2021-11-27',
     quantity: 10,
     ledgerId: 91
   },
@@ -652,7 +652,7 @@ module.exports = [
     cost: 50307,
     contract: 'Put',
     strike: 50,
-    expire: '2020-09-15',
+    expire: '2021-09-15',
     quantity: 7,
     ledgerId: 39
   },
@@ -661,7 +661,7 @@ module.exports = [
     cost: 6380,
     contract: 'Spread',
     strike: 15,
-    expire: '2020-04-29',
+    expire: '2021-04-29',
     quantity: 20,
     ledgerId: 26
   },
@@ -670,7 +670,7 @@ module.exports = [
     cost: -27918,
     contract: 'Spread',
     strike: 99,
-    expire: '2020-09-25',
+    expire: '2021-09-25',
     quantity: 15,
     ledgerId: 46
   },
@@ -679,7 +679,7 @@ module.exports = [
     cost: 203752,
     contract: 'Spread',
     strike: 36,
-    expire: '2020-07-05',
+    expire: '2021-07-05',
     quantity: 8,
     ledgerId: 95
   },
@@ -688,7 +688,7 @@ module.exports = [
     cost: 106639,
     contract: 'Stock',
     strike: 14,
-    expire: '2020-12-25',
+    expire: '2021-12-25',
     quantity: 14,
     ledgerId: 61
   },
@@ -697,7 +697,7 @@ module.exports = [
     cost: -3828,
     contract: 'Spread',
     strike: 66,
-    expire: '2020-12-16',
+    expire: '2021-12-16',
     quantity: 19,
     ledgerId: 64
   },
@@ -706,7 +706,7 @@ module.exports = [
     cost: 217743,
     contract: 'Put',
     strike: 73,
-    expire: '2020-04-11',
+    expire: '2021-04-11',
     quantity: 1,
     ledgerId: 15
   },
@@ -715,7 +715,7 @@ module.exports = [
     cost: 160062,
     contract: 'Put',
     strike: 55,
-    expire: '2020-05-14',
+    expire: '2021-05-14',
     quantity: 25,
     ledgerId: 96
   },
@@ -724,7 +724,7 @@ module.exports = [
     cost: 219641,
     contract: 'Call',
     strike: 44,
-    expire: '2020-06-20',
+    expire: '2021-06-20',
     quantity: 12,
     ledgerId: 82
   },
@@ -733,7 +733,7 @@ module.exports = [
     cost: -40319,
     contract: 'Put',
     strike: 75,
-    expire: '2020-07-31',
+    expire: '2021-07-31',
     quantity: 16,
     ledgerId: 73
   },
@@ -751,7 +751,7 @@ module.exports = [
     cost: -56349,
     contract: 'Call',
     strike: 53,
-    expire: '2020-05-03',
+    expire: '2021-05-03',
     quantity: 13,
     ledgerId: 82
   },
@@ -760,7 +760,7 @@ module.exports = [
     cost: -33776,
     contract: 'Stock',
     strike: 45,
-    expire: '2020-12-14',
+    expire: '2021-12-14',
     quantity: 9,
     ledgerId: 60
   },
@@ -769,7 +769,7 @@ module.exports = [
     cost: -50147,
     contract: 'Stock',
     strike: 4,
-    expire: '2020-07-14',
+    expire: '2021-07-14',
     quantity: 20,
     ledgerId: 90
   },
@@ -787,7 +787,7 @@ module.exports = [
     cost: 40281,
     contract: 'Put',
     strike: 100,
-    expire: '2020-06-21',
+    expire: '2021-06-21',
     quantity: 13,
     ledgerId: 12
   },
@@ -796,7 +796,7 @@ module.exports = [
     cost: 138631,
     contract: 'Call',
     strike: 67,
-    expire: '2020-10-28',
+    expire: '2021-10-28',
     quantity: 2,
     ledgerId: 53
   },
@@ -805,7 +805,7 @@ module.exports = [
     cost: 108168,
     contract: 'Put',
     strike: 40,
-    expire: '2020-12-03',
+    expire: '2021-12-03',
     quantity: 10,
     ledgerId: 61
   },
@@ -814,7 +814,7 @@ module.exports = [
     cost: 243895,
     contract: 'Stock',
     strike: 18,
-    expire: '2020-12-08',
+    expire: '2021-12-08',
     quantity: 7,
     ledgerId: 13
   },
@@ -823,7 +823,7 @@ module.exports = [
     cost: 154998,
     contract: 'Spread',
     strike: 35,
-    expire: '2020-08-22',
+    expire: '2021-08-22',
     quantity: 12,
     ledgerId: 6
   },
@@ -832,7 +832,7 @@ module.exports = [
     cost: 178776,
     contract: 'Stock',
     strike: 80,
-    expire: '2020-12-20',
+    expire: '2021-12-20',
     quantity: 17,
     ledgerId: 98
   },
@@ -841,7 +841,7 @@ module.exports = [
     cost: 163333,
     contract: 'Put',
     strike: 69,
-    expire: '2020-12-09',
+    expire: '2021-12-09',
     quantity: 10,
     ledgerId: 33
   },
@@ -859,7 +859,7 @@ module.exports = [
     cost: -32802,
     contract: 'Put',
     strike: 61,
-    expire: '2020-09-03',
+    expire: '2021-09-03',
     quantity: 6,
     ledgerId: 37
   },
@@ -868,7 +868,7 @@ module.exports = [
     cost: -64377,
     contract: 'Spread',
     strike: 90,
-    expire: '2020-10-27',
+    expire: '2021-10-27',
     quantity: 10,
     ledgerId: 12
   },
@@ -877,7 +877,7 @@ module.exports = [
     cost: 23788,
     contract: 'Stock',
     strike: 15,
-    expire: '2020-11-29',
+    expire: '2021-11-29',
     quantity: 8,
     ledgerId: 91
   },
@@ -886,7 +886,7 @@ module.exports = [
     cost: 141659,
     contract: 'Spread',
     strike: 72,
-    expire: '2020-10-16',
+    expire: '2021-10-16',
     quantity: 10,
     ledgerId: 36
   },
@@ -895,7 +895,7 @@ module.exports = [
     cost: 248204,
     contract: 'Spread',
     strike: 59,
-    expire: '2020-04-14',
+    expire: '2021-04-14',
     quantity: 18,
     ledgerId: 69
   }
