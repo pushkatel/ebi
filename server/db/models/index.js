@@ -1,4 +1,3 @@
-const User = require('./user')
 const Ledger = require('./ledger')
 const Account = require('./account')
 const Purchase = require('./purchase')
@@ -26,7 +25,6 @@ Deposit.belongsTo(Account)
  * instead of: const User = require('../db/models/user')
  */
 module.exports = {
-  User,
   Ledger,
   Account,
   Purchase,
