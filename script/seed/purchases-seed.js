@@ -45,7 +45,7 @@ module.exports = [
     ledgerId: 73
   },
   {
-    ticker: 'GAINO',
+    ticker: 'DISCB',
     cost: 34811,
     contract: 'Call',
     strike: 45,
