@@ -1,6 +1,7 @@
 module.exports = [
   {
-    ticker: 'HBANO',
+    key: 'TSLA006P19122021',
+    ticker: 'TSLA',
     cost: -60194,
     contract: 'Put',
     strike: 6,
@@ -9,43 +10,33 @@ module.exports = [
     ledgerId: 29
   },
   {
-    ticker: 'MODN',
+    key: 'TSLA',
+    ticker: 'TSLA',
     cost: 88537,
     contract: 'Stock',
-    strike: 63,
-    expire: '2021-01-31',
     quantity: 0,
     ledgerId: 28
   },
   {
-    ticker: 'CLVS',
-    cost: -64558,
+    key: 'AAPL',
+    ticker: 'AAPL',
+    cost: 125,
     contract: 'Stock',
-    strike: 96,
-    expire: '2021-01-13',
-    quantity: 0,
+    quantity: 2,
     ledgerId: 11
   },
+
   {
-    ticker: 'FALC',
-    cost: 63394,
-    contract: 'Spread',
-    strike: 91,
-    expire: '2021-07-03',
-    quantity: 0,
-    ledgerId: 54
-  },
-  {
-    ticker: 'DISCB',
-    cost: 55997,
+    key: 'AAPL',
+    ticker: 'AAPL',
+    cost: 120,
     contract: 'Stock',
-    strike: 51,
-    expire: '2021-07-09',
     quantity: 4,
     ledgerId: 73
   },
   {
-    ticker: 'DISCB',
+    key: 'MSFTC98768',
+    ticker: 'MSFT',
     cost: 34811,
     contract: 'Call',
     strike: 45,
@@ -54,7 +45,8 @@ module.exports = [
     ledgerId: 76
   },
   {
-    ticker: 'NCIT',
+    key: 'MSFTP2342',
+    ticker: 'MSFT',
     cost: 213986,
     contract: 'Put',
     strike: 52,
@@ -63,7 +55,8 @@ module.exports = [
     ledgerId: 73
   },
   {
-    ticker: 'CNBKA',
+    key: 'MSFTC23423',
+    ticker: 'MSFT',
     cost: 83374,
     contract: 'Call',
     strike: 47,
@@ -72,16 +65,18 @@ module.exports = [
     ledgerId: 22
   },
   {
-    ticker: 'KMI^A',
+    key: 'MSFTC23423',
+    ticker: 'MSFT',
     cost: 220443,
     contract: 'Call',
-    strike: 87,
-    expire: '2021-02-18',
+    strike: 47,
+    expire: '2021-08-18',
     quantity: 13,
     ledgerId: 75
   },
   {
-    ticker: 'MHNB.CL',
+    key: 'MSFTC23423',
+    ticker: 'MSFT',
     cost: 231579,
     contract: 'Call',
     strike: 31,
@@ -90,7 +85,8 @@ module.exports = [
     ledgerId: 30
   },
   {
-    ticker: 'ETH',
+    key: 'AMDP234',
+    ticker: 'AMD',
     cost: -58709,
     contract: 'Put',
     strike: 30,
@@ -99,25 +95,16 @@ module.exports = [
     ledgerId: 69
   },
   {
-    ticker: 'PYZ',
+    key: 'AMD',
+    ticker: 'AMD',
     cost: 203176,
     contract: 'Stock',
-    strike: 85,
-    expire: '2021-12-07',
     quantity: 16,
     ledgerId: 36
   },
   {
-    ticker: 'CAA',
-    cost: -89980,
-    contract: 'Spread',
-    strike: 10,
-    expire: '2021-11-29',
-    quantity: 9,
-    ledgerId: 18
-  },
-  {
-    ticker: 'UTF',
+    key: 'AMD234',
+    ticker: 'AMD',
     cost: 195303,
     contract: 'Call',
     strike: 77,
@@ -126,11 +113,10 @@ module.exports = [
     ledgerId: 58
   },
   {
-    ticker: 'GRC',
+    key: 'AMD',
+    ticker: 'AMD',
     cost: 185188,
     contract: 'Stock',
-    strike: 10,
-    expire: '2021-12-25',
     quantity: 16,
     ledgerId: 48
   }

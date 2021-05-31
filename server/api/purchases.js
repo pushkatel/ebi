@@ -2,19 +2,44 @@ const router = require('express').Router()
 const {Purchase} = require('../db/models')
 const {Op, Sequelize} = require('sequelize')
 
-router.get('/', async (req, res, next) => {
+//get all holdings summarized
+router.get('/holdings', async (req, res, next) => {
   try {
-    const purchases = await Purchase.findAll({
+    const holdings = await Purchase.findAll({
       where: {quantity: {[Op.gt]: 0}},
       attributes: [
-        [Sequelize.fn('sum', Sequelize.col('quantity')), 'total'],
-        [Sequelize.fn('sum', Sequelize.col('cost')), 'totalCost'],
-        'ticker',
-        'contract'
+        'key',
+        [Sequelize.fn('sum', Sequelize.col('quantity')), 'totalQuantity'],
+        [Sequelize.fn('sum', Sequelize.col('cost')), 'totalCost']
       ],
-      group: ['ticker', 'contract']
+      group: ['key']
+      // group: ['ticker', 'contract', 'strike']
     })
-    res.json(purchases)
+    res.json(holdings)
+  } catch (err) {
+    next(err)
+  }
+})
+
+//get everything that is owned individually
+router.get('/all', async (req, res, next) => {
+  try {
+    const holdings = await Purchase.findAll({
+      where: {quantity: {[Op.gt]: 0}}
+    })
+    res.json(holdings)
+  } catch (err) {
+    next(err)
+  }
+})
+
+//new purchase
+router.post('/new', async (req, res, next) => {
+  try {
+    const holdings = await Purchase.findAll({
+      where: {quantity: {[Op.gt]: 0}}
+    })
+    res.json(holdings)
   } catch (err) {
     next(err)
   }
