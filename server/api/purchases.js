@@ -36,10 +36,10 @@ router.get('/all', async (req, res, next) => {
 //new purchase
 router.post('/new', async (req, res, next) => {
   try {
-    const holdings = await Purchase.findAll({
-      where: {quantity: {[Op.gt]: 0}}
-    })
-    res.json(holdings)
+    const data = req.body
+    //ledger add
+    const {newPur} = await Purchase.create(data)
+    res.json(newPur)
   } catch (err) {
     next(err)
   }
