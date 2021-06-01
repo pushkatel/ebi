@@ -1,6 +1,5 @@
 const router = require('express').Router()
 const {Ledger} = require('../db/models')
-const {Sequelize} = require('sequelize')
 
 //new ledger entry
 router.post('/new', async (req, res, next) => {

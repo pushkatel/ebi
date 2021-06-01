@@ -18,14 +18,8 @@ router.get('/', async (req, res, next) => {
 router.post('/new', async (req, res, next) => {
   try {
     const data = req.body
-    const newLed = await Ledger.create({
-      key: data.key,
-      action: data.action,
-      value: data.cost
-    })
-    const newPur = await Purchase.create(data)
-    newPur.setLedger(newLed)
-    res.json(newPur)
+    const newAcc = await Account.create(data)
+    res.json(newAcc)
   } catch (err) {
     next(err)
   }
