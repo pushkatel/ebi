@@ -37,9 +37,13 @@ router.get('/all', async (req, res, next) => {
 router.post('/new', async (req, res, next) => {
   try {
     const data = req.body
-    const newLed = await Ledger.create({action: data.key, value: data.cost})
+    const newLed = await Ledger.create({
+      key: data.key,
+      action: data.action,
+      value: data.cost
+    })
     const newPur = await Purchase.create(data)
-    newLed.hasPurchase(newPur)
+    newPur.setLedger(newLed)
     res.json(newPur)
   } catch (err) {
     next(err)
