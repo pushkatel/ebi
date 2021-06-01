@@ -1,5 +1,5 @@
 const router = require('express').Router()
-const {Purchase} = require('../db/models')
+const {Purchase, Ledger} = require('../db/models')
 const {Op, Sequelize} = require('sequelize')
 
 //get all holdings summarized
@@ -37,8 +37,9 @@ router.get('/all', async (req, res, next) => {
 router.post('/new', async (req, res, next) => {
   try {
     const data = req.body
-    //ledger add
-    const {newPur} = await Purchase.create(data)
+    const newLed = await Ledger.create({action: data.key, value: data.cost})
+    const newPur = await Purchase.create(data)
+    newLed.hasPurchase(newPur)
     res.json(newPur)
   } catch (err) {
     next(err)

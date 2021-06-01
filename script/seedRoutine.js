@@ -23,10 +23,10 @@ const seedRoutine = async () => {
     console.log(green(`Seeded ${returnedSeededLedger.length} Ledgers`))
 
     // Deposits
-    const returnedSeededDeposits = await Deposit.bulkCreate(deposits, {
-      returning: true
-    })
-    console.log(green(`Seeded ${returnedSeededDeposits.length} Deposits`))
+    // const returnedSeededDeposits = await Deposit.bulkCreate(deposits, {
+    //   returning: true
+    // })
+    // console.log(green(`Seeded ${returnedSeededDeposits.length} Deposits`))
 
     // Purchases
     const returnedSeededPurchases = await Purchase.bulkCreate(purchases, {
