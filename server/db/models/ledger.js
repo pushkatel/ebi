@@ -15,7 +15,7 @@ const Ledger = db.define('ledger', {
     allowNull: false
   },
   value: {type: Sequelize.INTEGER, allowNull: false},
-  shares: {type: Sequelize.INTEGER, allowNull: true},
+  quantity: {type: Sequelize.INTEGER, allowNull: true},
   units: {type: Sequelize.INTEGER, allowNull: true}
 })
 
