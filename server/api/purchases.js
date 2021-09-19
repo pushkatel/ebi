@@ -2,11 +2,10 @@ const router = require('express').Router()
 const {Purchase, Ledger} = require('../db/models')
 const {Op, Sequelize} = require('sequelize')
 
-//get all holdings summarized
+//get all holdings by equity
 router.get('/holdings', async (req, res, next) => {
   try {
     const holdings = await Purchase.findAll({
-      where: {quantity: {[Op.gt]: 0}},
       attributes: [
         'key',
         [Sequelize.fn('sum', Sequelize.col('quantity')), 'totalQuantity'],
@@ -21,7 +20,7 @@ router.get('/holdings', async (req, res, next) => {
   }
 })
 
-//get everything that is owned individually
+//get all holdings individually
 router.get('/all', async (req, res, next) => {
   try {
     const holdings = await Purchase.findAll({
@@ -33,16 +32,67 @@ router.get('/all', async (req, res, next) => {
   }
 })
 
-//new purchase
-router.post('/new', async (req, res, next) => {
+//get all holdings individually
+router.get('/one', async (req, res, next) => {
+  try {
+    const holdings = await Purchase.findOne({
+      where: {quantity: {[Op.gt]: 0}}
+    })
+    res.json(holdings)
+  } catch (err) {
+    next(err)
+  }
+})
+
+//Buy a new stock, Save into ledger and purchases
+router.post('/buy', async (req, res, next) => {
   try {
     const data = req.body
     const newLed = await Ledger.create({
       key: data.key,
       action: data.action,
-      value: data.cost
+      value: data.cost,
+      quantity: data.quantity
     })
     const newPur = await Purchase.create(data)
+    newPur.setLedger(newLed)
+    res.json(newPur)
+  } catch (err) {
+    next(err)
+  }
+})
+
+const getAvgCost = async key => {
+  const holdings = await Purchase.findAll({
+    where: {key: key},
+    attributes: [
+      'key',
+      [Sequelize.fn('sum', Sequelize.col('quantity')), 'totalQuantity'],
+      [Sequelize.fn('sum', Sequelize.col('cost')), 'totalCost']
+    ],
+    group: ['key'],
+    raw: true
+  })
+
+  return Math.round(holdings[0].totalCost / holdings[0].totalQuantity)
+}
+
+//sell a equity, Save into ledger and purchases
+router.post('/sell', async (req, res, next) => {
+  try {
+    const data = req.body
+    //ledger records the sale amount
+    const newLed = await Ledger.create({
+      key: data.key,
+      action: data.action,
+      value: data.cost,
+      quantity: data.quantity
+    })
+    //get average cost and update in data
+    const avgPrice = await getAvgCost(data.key)
+    const purchaseData = {...data, cost: data.quantity * avgPrice}
+    //Purchase subtracts the average cost
+    const newPur = await Purchase.create(purchaseData)
     newPur.setLedger(newLed)
     res.json(newPur)
   } catch (err) {
