@@ -1,6 +1,6 @@
 const Ledger = require('./ledger')
 const Account = require('./account')
-const Purchase = require('./purchase')
+const Holding = require('./holding')
 const Deposit = require('./deposit')
 
 /**
@@ -9,8 +9,8 @@ const Deposit = require('./deposit')
  *
  */
 
-Ledger.hasMany(Purchase)
-Purchase.belongsTo(Ledger)
+Ledger.hasMany(Holding)
+Holding.belongsTo(Ledger)
 
 Ledger.hasMany(Deposit)
 Deposit.belongsTo(Ledger)
@@ -27,6 +27,6 @@ Deposit.belongsTo(Account)
 module.exports = {
   Ledger,
   Account,
-  Purchase,
+  Holding,
   Deposit
 }

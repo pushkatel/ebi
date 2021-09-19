@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize')
 const db = require('../db')
 
-const Purchase = db.define('purchase', {
+const Holding = db.define('holding', {
   key: {type: Sequelize.STRING, allowNull: false},
   ticker: {type: Sequelize.STRING, allowNull: false},
   cost: {type: Sequelize.INTEGER, allowNull: false},
@@ -14,4 +14,4 @@ const Purchase = db.define('purchase', {
   quantity: {type: Sequelize.INTEGER, allowNull: false}
 })
 
-module.exports = Purchase
+module.exports = Holding

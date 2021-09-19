@@ -1,11 +1,11 @@
 const router = require('express').Router()
-const {Purchase, Ledger} = require('../db/models')
+const {Holding, Ledger} = require('../db/models')
 const {Op, Sequelize} = require('sequelize')
 
 //get all holdings by equity
 router.get('/holdings', async (req, res, next) => {
   try {
-    const holdings = await Purchase.findAll({
+    const holdings = await Holding.findAll({
       attributes: [
         'key',
         [Sequelize.fn('sum', Sequelize.col('quantity')), 'totalQuantity'],
@@ -23,7 +23,7 @@ router.get('/holdings', async (req, res, next) => {
 //get all holdings individually
 router.get('/all', async (req, res, next) => {
   try {
-    const holdings = await Purchase.findAll({
+    const holdings = await Holding.findAll({
       where: {quantity: {[Op.gt]: 0}}
     })
     res.json(holdings)
@@ -35,7 +35,7 @@ router.get('/all', async (req, res, next) => {
 //get all holdings individually
 router.get('/one', async (req, res, next) => {
   try {
-    const holdings = await Purchase.findOne({
+    const holdings = await Holding.findOne({
       where: {quantity: {[Op.gt]: 0}}
     })
     res.json(holdings)
@@ -54,7 +54,7 @@ router.post('/buy', async (req, res, next) => {
       value: data.cost,
       quantity: data.quantity
     })
-    const newPur = await Purchase.create(data)
+    const newPur = await Holding.create(data)
     newPur.setLedger(newLed)
     res.json(newPur)
   } catch (err) {
@@ -63,7 +63,7 @@ router.post('/buy', async (req, res, next) => {
 })
 
 const getAvgCost = async key => {
-  const holdings = await Purchase.findAll({
+  const holdings = await Holding.findAll({
     where: {key: key},
     attributes: [
       'key',
@@ -92,7 +92,7 @@ router.post('/sell', async (req, res, next) => {
     const avgPrice = await getAvgCost(data.key)
     const purchaseData = {...data, cost: data.quantity * avgPrice}
     //Purchase subtracts the average cost
-    const newPur = await Purchase.create(purchaseData)
+    const newPur = await Holding.create(purchaseData)
     newPur.setLedger(newLed)
     res.json(newPur)
   } catch (err) {
