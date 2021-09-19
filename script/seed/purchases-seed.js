@@ -1,22 +1,21 @@
 module.exports = [
   {
-    key: 'TSLA006P19122021',
-    ticker: 'TSLA',
-    cost: -60194,
-    contract: 'Put',
-    strike: 6,
-    expire: '2021-12-19',
-    quantity: 0,
+    key: 'A',
+    ticker: 'A',
+    cost: 25000,
+    contract: 'Stock',
+    quantity: 5,
     ledgerId: 1
   },
   {
-    key: 'TSLA',
-    ticker: 'TSLA',
-    cost: 88537,
+    key: 'A',
+    ticker: 'A',
+    cost: 10000,
     contract: 'Stock',
-    quantity: 0,
+    quantity: 10,
     ledgerId: 2
   },
+
   {
     key: 'AAPL',
     ticker: 'AAPL',
