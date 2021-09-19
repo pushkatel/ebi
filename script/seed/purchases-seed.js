@@ -2,26 +2,26 @@ module.exports = [
   {
     key: 'A',
     ticker: 'A',
-    cost: 25000,
+    cost: 100000,
     contract: 'Stock',
-    quantity: 5,
+    quantity: 10,
     ledgerId: 1
   },
   {
     key: 'A',
     ticker: 'A',
-    cost: 10000,
+    cost: 100000,
     contract: 'Stock',
-    quantity: 10,
+    quantity: 4,
     ledgerId: 2
   },
 
   {
-    key: 'AAPL',
-    ticker: 'AAPL',
-    cost: 125,
+    key: 'A',
+    ticker: 'A',
+    cost: 125000,
     contract: 'Stock',
-    quantity: 2,
+    quantity: 10,
     ledgerId: 3
   },
 
