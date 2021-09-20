@@ -2,8 +2,8 @@ const router = require('express').Router()
 const {Account} = require('../db/models')
 const {Op} = require('sequelize')
 
-//get all holdings summarized
-router.get('/', async (req, res, next) => {
+//get all accounts
+router.get('/all', async (req, res, next) => {
   try {
     const accounts = await Account.findAll({
       where: {units: {[Op.gt]: 0}}
@@ -14,7 +14,17 @@ router.get('/', async (req, res, next) => {
   }
 })
 
-//new purchase
+//get all holdings summarized
+router.get('/:accountId', async (req, res, next) => {
+  try {
+    const account = await Account.findByPk(req.params.accountId)
+    res.json(account)
+  } catch (err) {
+    next(err)
+  }
+})
+
+//new account created
 router.post('/new', async (req, res, next) => {
   try {
     const data = req.body
