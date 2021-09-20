@@ -14,7 +14,7 @@ router.get('/all', async (req, res, next) => {
   }
 })
 
-//get all holdings summarized
+//get Single Account
 router.get('/:accountId', async (req, res, next) => {
   try {
     const account = await Account.findByPk(req.params.accountId)
