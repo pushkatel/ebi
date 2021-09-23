@@ -6,7 +6,7 @@ const Ledger = db.define('ledger', {
   action: {
     type: Sequelize.ENUM(
       'Deposit',
-      'Withdraw',
+      'Withdrawal',
       'Credit/Open',
       'Credit/Close',
       'Debit/Open',

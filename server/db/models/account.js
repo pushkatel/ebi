@@ -5,7 +5,8 @@ const Account = db.define('account', {
   name: {type: Sequelize.STRING, allowNull: false},
   phone: {type: Sequelize.STRING, allowNull: false},
   email: {type: Sequelize.STRING, validate: {isEmail: true}, allowNull: false},
-  units: {type: Sequelize.INTEGER, allowNull: false}
+  units: {type: Sequelize.INTEGER, allowNull: false},
+  invested: {type: Sequelize.INTEGER, allowNull: false}
 })
 
 module.exports = Account
