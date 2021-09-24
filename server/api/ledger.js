@@ -1,5 +1,5 @@
 const router = require('express').Router()
-const {Ledger} = require('../db/models')
+const {Ledger, Account} = require('../db/models')
 const {Sequelize} = require('sequelize')
 
 //new ledger entry
@@ -14,16 +14,24 @@ router.post('/new', async (req, res, next) => {
   }
 })
 
-//Get current unit price and invested amount
+//Get current total cash, units, and invested amount
 router.get('/current', async (req, res, next) => {
   try {
-    const current = await Ledger.findAll({
+    const [current] = await Ledger.findAll({
       attributes: [
-        [Sequelize.fn('sum', Sequelize.col('value')), 'totalInvested'],
+        [Sequelize.fn('sum', Sequelize.col('value')), 'totalCash'],
         [Sequelize.fn('sum', Sequelize.col('units')), 'totalUnits']
-      ]
+      ],
+      raw: true
     })
-    res.json(current)
+    const [invested] = await Account.findAll({
+      attributes: [
+        [Sequelize.fn('sum', Sequelize.col('invested')), 'totalInvested']
+      ],
+      raw: true
+    })
+    const output = {...current, ...invested}
+    res.json(output)
   } catch (err) {
     next(err)
   }
