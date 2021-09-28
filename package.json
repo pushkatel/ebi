@@ -47,6 +47,7 @@
     "express": "^4.16.4",
     "express-session": "^1.15.1",
     "gridjs": "^5.0.2",
+    "gridjs-react": "^5.0.2",
     "history": "^4.9.0",
     "morgan": "^1.9.1",
     "passport": "^0.4.0",
