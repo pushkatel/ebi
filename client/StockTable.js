@@ -1,9 +1,10 @@
 import React, {useEffect, useState} from 'react'
 import axios from 'axios'
 import {Grid} from 'gridjs-react'
+import {HoldingCard} from './HoldingCard'
 
 const StockTable = () => {
-  const [stocks, setStocks] = useState([{id: 0}])
+  const [stocks, setStocks] = useState([])
   useEffect(() => {
     const fetchStocks = async () => {
       const res = await axios.get('/api/holdings/all')
@@ -11,11 +12,14 @@ const StockTable = () => {
     }
     fetchStocks()
   }, [])
-  console.log('test', stocks)
+  // console.log('test', stocks[0])
 
   return (
     <div>
-      <Grid data={stocks} />
+      {/* <Grid data={stocks} /> */}
+      {stocks.map(stock => (
+        <HoldingCard key={stock.key} stock={stock} />
+      ))}
     </div>
   )
 }
