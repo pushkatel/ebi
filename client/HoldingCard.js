@@ -1,19 +1,23 @@
 import React from 'react'
+import {MiniBuyButton} from './MiniBuyButton'
+import {MiniSellButton} from './MiniSellButton'
 
 export const HoldingCard = ({stock}) => {
   const singleHoldingStyle = {
     display: 'flex',
     margin: '10px',
     justifyContent: 'space-evenly',
-    maxWidth: '50vw'
+    maxWidth: '50vw',
+    border: '1px solid black'
   }
   return (
     <div style={singleHoldingStyle}>
       <div>{stock.contract}</div>
-      <div>{stock.key}</div>
+      <div>{stock.ticker}</div>
+      <div>{stock.quantity}</div>
       {['Call', 'Put', 'Spread'].includes(stock.contract) ? (
         <>
-          <div>{stock.expire}</div>
+          <div>{stock.expire.substring(0, 10)}</div>
           <div>{stock.strike}</div>
         </>
       ) : (
@@ -22,7 +26,8 @@ export const HoldingCard = ({stock}) => {
           <div></div>
         </>
       )}
-      <div>{stock.quantity}</div>
+      <MiniSellButton />
+      <MiniBuyButton />
     </div>
   )
 }
