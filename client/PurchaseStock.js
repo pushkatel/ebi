@@ -1,7 +1,5 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 import StockTable from './StockTable'
-import axios from 'axios'
-
 const PurchaseStock = () => {
   return (
     <>

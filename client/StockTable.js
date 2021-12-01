@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react'
 import axios from 'axios'
-import {Grid} from 'gridjs-react'
 import {HoldingCard} from './HoldingCard'
 
 const StockTable = () => {
@@ -12,11 +11,9 @@ const StockTable = () => {
     }
     fetchStocks()
   }, [])
-  // console.log('test', stocks[0])
 
   return (
     <div>
-      {/* <Grid data={stocks} /> */}
       {stocks.map(stock => (
         <HoldingCard key={stock.key} stock={stock} />
       ))}
